@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14446F0C1E572A31000CA07C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14446F0B1E572A31000CA07C /* AppDelegate.swift */; };
-		14446F0E1E572A31000CA07C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14446F0D1E572A31000CA07C /* ViewController.swift */; };
+		1401B0301E71CBDB0007EA25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401B02D1E71CBDB0007EA25 /* AppDelegate.swift */; };
+		1401B0341E71CC060007EA25 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401B0321E71CC060007EA25 /* AuthViewController.swift */; };
+		1401B0381E71CC440007EA25 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401B0371E71CC440007EA25 /* MapViewController.swift */; };
+		1401B03B1E71CCB30007EA25 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401B03A1E71CCB30007EA25 /* Session.swift */; };
+		1401B03D1E71CEA00007EA25 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401B03C1E71CEA00007EA25 /* AuthView.swift */; };
+		1401B03F1E71CEA90007EA25 /* AuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1401B03E1E71CEA90007EA25 /* AuthView.xib */; };
+		1401B0421E71D96E0007EA25 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401B0411E71D96E0007EA25 /* UIView+Extensions.swift */; };
 		14446F131E572A31000CA07C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14446F121E572A31000CA07C /* Assets.xcassets */; };
 		14446F161E572A31000CA07C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14446F141E572A31000CA07C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1401B02D1E71CBDB0007EA25 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1401B0321E71CC060007EA25 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		1401B0371E71CC440007EA25 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1401B03A1E71CCB30007EA25 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		1401B03C1E71CEA00007EA25 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		1401B03E1E71CEA90007EA25 /* AuthView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthView.xib; sourceTree = "<group>"; };
+		1401B0411E71D96E0007EA25 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		14446F081E572A31000CA07C /* WWDCFamily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCFamily.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		14446F0B1E572A31000CA07C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14446F0D1E572A31000CA07C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		14446F121E572A31000CA07C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14446F151E572A31000CA07C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14446F171E572A31000CA07C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +43,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1401B0281E71CBDB0007EA25 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				1401B0401E71D96E0007EA25 /* Extensions */,
+				1401B0391E71CCAE0007EA25 /* Models */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		1401B0291E71CBDB0007EA25 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1401B02C1E71CBDB0007EA25 /* Main */,
+				1401B02A1E71CBDB0007EA25 /* Auth */,
+				1401B02E1E71CBDB0007EA25 /* Map */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		1401B02A1E71CBDB0007EA25 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				1401B0311E71CC060007EA25 /* Controllers */,
+				1401B0331E71CC060007EA25 /* Views */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		1401B02C1E71CBDB0007EA25 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1401B02D1E71CBDB0007EA25 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1401B02E1E71CBDB0007EA25 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				1401B0351E71CC2A0007EA25 /* Controllers */,
+				1401B0361E71CC2A0007EA25 /* Views */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		1401B0311E71CC060007EA25 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1401B0321E71CC060007EA25 /* AuthViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1401B0331E71CC060007EA25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1401B03C1E71CEA00007EA25 /* AuthView.swift */,
+				1401B03E1E71CEA90007EA25 /* AuthView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1401B0351E71CC2A0007EA25 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1401B0371E71CC440007EA25 /* MapViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1401B0361E71CC2A0007EA25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1401B0391E71CCAE0007EA25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1401B03A1E71CCB30007EA25 /* Session.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1401B0401E71D96E0007EA25 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1401B0411E71D96E0007EA25 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		14446EFF1E572A30000CA07C = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +155,8 @@
 		14446F0A1E572A31000CA07C /* WWDCFamily */ = {
 			isa = PBXGroup;
 			children = (
-				14446F0B1E572A31000CA07C /* AppDelegate.swift */,
-				14446F0D1E572A31000CA07C /* ViewController.swift */,
+				1401B0281E71CBDB0007EA25 /* Library */,
+				1401B0291E71CBDB0007EA25 /* iOS */,
 				14446F121E572A31000CA07C /* Assets.xcassets */,
 				14446F141E572A31000CA07C /* LaunchScreen.storyboard */,
 				14446F171E572A31000CA07C /* Info.plist */,
@@ -122,6 +225,7 @@
 			files = (
 				14446F161E572A31000CA07C /* LaunchScreen.storyboard in Resources */,
 				14446F131E572A31000CA07C /* Assets.xcassets in Resources */,
+				1401B03F1E71CEA90007EA25 /* AuthView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14446F0E1E572A31000CA07C /* ViewController.swift in Sources */,
-				14446F0C1E572A31000CA07C /* AppDelegate.swift in Sources */,
+				1401B0421E71D96E0007EA25 /* UIView+Extensions.swift in Sources */,
+				1401B03B1E71CCB30007EA25 /* Session.swift in Sources */,
+				1401B03D1E71CEA00007EA25 /* AuthView.swift in Sources */,
+				1401B0301E71CBDB0007EA25 /* AppDelegate.swift in Sources */,
+				1401B0381E71CC440007EA25 /* MapViewController.swift in Sources */,
+				1401B0341E71CC060007EA25 /* AuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WWDCFamily/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wwdc-family.WWDCFamily";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -259,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WWDCFamily/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wwdc-family.WWDCFamily";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,6 +395,7 @@
 				14446F1C1E572A31000CA07C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
