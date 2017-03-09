@@ -14,8 +14,10 @@
 		142F65981E71F0B1006D350B /* AuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142F658F1E71F0B1006D350B /* AuthView.xib */; };
 		142F65991E71F0B1006D350B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F65911E71F0B1006D350B /* AppDelegate.swift */; };
 		142F659A1E71F0B1006D350B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F65941E71F0B1006D350B /* MapViewController.swift */; };
+		142F659C1E71F162006D350B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 142F659B1E71F162006D350B /* GoogleService-Info.plist */; };
 		14446F131E572A31000CA07C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14446F121E572A31000CA07C /* Assets.xcassets */; };
 		14446F161E572A31000CA07C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14446F141E572A31000CA07C /* LaunchScreen.storyboard */; };
+		B15FD94D147B156F90759430 /* Pods_WWDCFamily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3530D59C4D99526C528ADE05 /* Pods_WWDCFamily.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +28,14 @@
 		142F658F1E71F0B1006D350B /* AuthView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthView.xib; sourceTree = "<group>"; };
 		142F65911E71F0B1006D350B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		142F65941E71F0B1006D350B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		142F659B1E71F162006D350B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		14446F081E572A31000CA07C /* WWDCFamily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCFamily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14446F121E572A31000CA07C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14446F151E572A31000CA07C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14446F171E572A31000CA07C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3530D59C4D99526C528ADE05 /* Pods_WWDCFamily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWDCFamily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B19F3C1DF1367A08F3799E8 /* Pods-WWDCFamily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWDCFamily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWDCFamily/Pods-WWDCFamily.debug.xcconfig"; sourceTree = "<group>"; };
+		D85D6E9273B68A84D0197674 /* Pods-WWDCFamily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWDCFamily.release.xcconfig"; path = "Pods/Target Support Files/Pods-WWDCFamily/Pods-WWDCFamily.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15FD94D147B156F90759430 /* Pods_WWDCFamily.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +148,8 @@
 			children = (
 				14446F0A1E572A31000CA07C /* WWDCFamily */,
 				14446F091E572A31000CA07C /* Products */,
+				79913C7B256006FC71FBB8AD /* Pods */,
+				95B9102D23705818AA3D949C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,8 +169,26 @@
 				14446F121E572A31000CA07C /* Assets.xcassets */,
 				14446F141E572A31000CA07C /* LaunchScreen.storyboard */,
 				14446F171E572A31000CA07C /* Info.plist */,
+				142F659B1E71F162006D350B /* GoogleService-Info.plist */,
 			);
 			path = WWDCFamily;
+			sourceTree = "<group>";
+		};
+		79913C7B256006FC71FBB8AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B19F3C1DF1367A08F3799E8 /* Pods-WWDCFamily.debug.xcconfig */,
+				D85D6E9273B68A84D0197674 /* Pods-WWDCFamily.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95B9102D23705818AA3D949C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3530D59C4D99526C528ADE05 /* Pods_WWDCFamily.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14446F1A1E572A31000CA07C /* Build configuration list for PBXNativeTarget "WWDCFamily" */;
 			buildPhases = (
+				132280E96463F30EC415639D /* [CP] Check Pods Manifest.lock */,
 				14446F041E572A30000CA07C /* Sources */,
 				14446F051E572A30000CA07C /* Frameworks */,
 				14446F061E572A30000CA07C /* Resources */,
+				E5FF913D13970D8AEB9E0F8D /* [CP] Embed Pods Frameworks */,
+				6D7BC884FD0A7E5DED708DB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,12 +254,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				14446F161E572A31000CA07C /* LaunchScreen.storyboard in Resources */,
+				142F659C1E71F162006D350B /* GoogleService-Info.plist in Resources */,
 				14446F131E572A31000CA07C /* Assets.xcassets in Resources */,
 				142F65981E71F0B1006D350B /* AuthView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		132280E96463F30EC415639D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D7BC884FD0A7E5DED708DB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWDCFamily/Pods-WWDCFamily-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5FF913D13970D8AEB9E0F8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWDCFamily/Pods-WWDCFamily-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14446F041E572A30000CA07C /* Sources */ = {
@@ -352,6 +431,7 @@
 		};
 		14446F1B1E572A31000CA07C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B19F3C1DF1367A08F3799E8 /* Pods-WWDCFamily.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WWDCFamily/Info.plist;
@@ -365,6 +445,7 @@
 		};
 		14446F1C1E572A31000CA07C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D85D6E9273B68A84D0197674 /* Pods-WWDCFamily.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WWDCFamily/Info.plist;
