@@ -10,23 +10,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
 
         if Session.isLoggedIn {
-            window?.rootViewController = MapViewController()
+            window?.rootViewController = self.mapViewController()
         } else {
-            let controller = AuthViewController()
-            controller.delegate = self
-            window?.rootViewController = controller
+            window?.rootViewController = self.authViewController()
         }
 
         window?.makeKeyAndVisible()
 
         return true
     }
+
+    func authViewController() -> AuthViewController {
+        let controller = AuthViewController()
+        controller.delegate = self
+
+        return controller
+    }
+
+    func mapViewController() -> UINavigationController {
+        let controller = MapViewController()
+        let navigationController = UINavigationController(rootViewController: controller)
+
+        return navigationController
+    }
 }
 
 extension AppDelegate: AuthViewControllerDelegate {
     func authViewController(_ authViewControllerDidLogIn: AuthViewController) {
         Session.isLoggedIn = true
-        window?.rootViewController = MapViewController()
+        window?.rootViewController = self.mapViewController()
         window?.makeKeyAndVisible()
     }
 }
