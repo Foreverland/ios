@@ -16,7 +16,7 @@ class AuthViewController: UIViewController {
     }
 
     override func loadView() {
-        let view = UIView.instanceFromNib(nibName: "AuthView") as AuthView
+        let view = UIView.instanceFromNib() as AuthView
         view.delegate = self
 
         self.view = view
