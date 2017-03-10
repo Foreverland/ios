@@ -1,13 +1,14 @@
 import Foundation
+import Firebase
 
 struct Session {
-    static var isLoggedIn: Bool {
-        set {
-            UserDefaults.standard.set(newValue, forKey: "isLoggedIn")
-        }
+    static let unauthorizedNotificationName = NSNotification.Name(rawValue: "unauthorizedNotificationName")
 
+    static var isLoggedIn: Bool {
         get {
-            return UserDefaults.standard.bool(forKey: "isLoggedIn")
+            let auth = FIRAuth.auth()
+
+            return auth?.currentUser != nil
         }
     }
 }
