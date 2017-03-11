@@ -1,18 +1,18 @@
 import UIKit
 import MapKit
 
-final class MapViewController: UIViewController, StoryboardInstance, RootChildViewController {
-
-    static let storyboardName: String = "Core"
-
-    @IBOutlet private weak var mapView: MKMapView! {
-        didSet {
-            mapView.setRegion(datasource.sfRegion, animated: true)
-            mapView.showsUserLocation = true
-        }
-    }
+final class MapViewController: UIViewController, RootChildViewController {
 
     private let datasource = MapDataSource()
+
+    override func loadView() {
+        let view = UIView.instanceFromNib() as MapView
+        self.view = view
+    }
+
+    var mapView: MKMapView {
+        return (self.view as! MapView).mapView
+    }
 
     // MARK: VC
 
@@ -21,6 +21,9 @@ final class MapViewController: UIViewController, StoryboardInstance, RootChildVi
         navigationItem.hidesBackButton = true
         title = "MapVC.Title".localized
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "locIcon"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(MapViewController.didTapCurrentLocationBarButton))
+
+        mapView.setRegion(datasource.sfRegion, animated: true)
+        mapView.showsUserLocation = true
     }
 
     override func viewWillAppear(_ animated: Bool) {

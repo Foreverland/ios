@@ -1,8 +1,6 @@
 import UIKit
 
-final class AuthViewController: UIViewController, StoryboardInstance, RootChildViewController {
-
-    static var storyboardName: String = "Core"
+final class AuthViewController: UIViewController, RootChildViewController {
 
     @IBOutlet private weak var headlineLabel: UILabel! {
         didSet {
@@ -15,14 +13,26 @@ final class AuthViewController: UIViewController, StoryboardInstance, RootChildV
         }
     }
 
+    override func loadView() {
+        let view = UIView.instanceFromNib() as AuthView
+        view.delegate = self
+        self.view = view
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
     }
 
-    // MARK: UI Events
+    // MARK: UIStatusBar
 
-    @IBAction private func didTapLoginButton() {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+}
+
+extension AuthViewController: AuthViewDelegate {
+    func authView(_ authViewDidPressLogIn: AuthView) {
         Session.sharedInstance.login { [weak self] (success) in
             guard success else {
                 // Present failure modal
@@ -31,11 +41,5 @@ final class AuthViewController: UIViewController, StoryboardInstance, RootChildV
 
             self?.rootNavigationController.routeToMap(animated: true)
         }
-    }
-
-    // MARK: UIStatusBar
-
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
     }
 }
