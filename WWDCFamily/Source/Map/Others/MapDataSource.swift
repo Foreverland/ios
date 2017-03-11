@@ -1,11 +1,3 @@
-//
-//  MapDatasource.swift
-//  WWDCFamily
-//
-//  Created by Adrian Domanico on 3/10/17.
-//  Copyright © 2017 WWDC Family. All rights reserved.
-//
-
 import Foundation
 import MapKit
 

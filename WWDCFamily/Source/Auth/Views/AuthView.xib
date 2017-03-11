@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="IQJ-LM-cbd" customClass="AuthView" customModule="WWDCFamily" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="kSC-5b-aq2">
+                    <rect key="frame" x="16" y="285.33333333333331" width="382" height="165.33333333333337"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people" translatesAutoresizingMaskIntoConstraints="NO" id="8dt-Ml-qYf">
+                            <rect key="frame" x="111.66666666666669" y="0.0" width="159" height="99"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WWDC Family" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgi-aj-JHh">
+                            <rect key="frame" x="55.666666666666686" y="115" width="271" height="50.333333333333371"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="42"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVQ-Ch-dcw">
+                    <rect key="frame" x="0.0" y="684" width="414" height="36"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <state key="normal" title="LOGIN">
+                        <color key="titleColor" red="1" green="1" blue="0.99999988080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="logIn:" destination="IQJ-LM-cbd" eventType="touchUpInside" id="wf1-3R-u6W"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.42550107840000001" green="0.042427778239999998" blue="0.9304165244" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yVQ-Ch-dcw" firstAttribute="leading" secondItem="IQJ-LM-cbd" secondAttribute="leading" id="8tc-6K-feO"/>
+                <constraint firstItem="kSC-5b-aq2" firstAttribute="centerY" secondItem="IQJ-LM-cbd" secondAttribute="centerY" id="EUc-PQ-QWW"/>
+                <constraint firstAttribute="bottom" secondItem="yVQ-Ch-dcw" secondAttribute="bottom" constant="16" id="Ecp-0i-TZh"/>
+                <constraint firstItem="kSC-5b-aq2" firstAttribute="leading" secondItem="IQJ-LM-cbd" secondAttribute="leading" constant="16" id="I2U-h2-k9o"/>
+                <constraint firstAttribute="trailing" secondItem="kSC-5b-aq2" secondAttribute="trailing" constant="16" id="LAC-qg-P8k"/>
+                <constraint firstAttribute="trailing" secondItem="yVQ-Ch-dcw" secondAttribute="trailing" id="x25-Cv-Pa2"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="people" width="159" height="99"/>
+    </resources>
+</document>

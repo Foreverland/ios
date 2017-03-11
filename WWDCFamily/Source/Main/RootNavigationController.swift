@@ -1,11 +1,3 @@
-//
-//  RootNavigationController.swift
-//  WWDCFamily
-//
-//  Created by Adrian Domanico on 3/10/17.
-//  Copyright © 2017 WWDC Family. All rights reserved.
-//
-
 import UIKit
 
 protocol RootChildViewController: class {
@@ -18,18 +10,16 @@ extension RootChildViewController where Self : UIViewController {
     }
 }
 
-final class RootNavigationController: UINavigationController, StoryboardInstance {
-
-    static let storyboardName: String =  "Root"
+final class RootNavigationController: UINavigationController {
 
     // MARK: Child VCs
 
     private lazy var authVC: AuthViewController = {
-        return AuthViewController.storyboardInit()
+        return AuthViewController()
     }()
 
     private lazy var mapVC: MapViewController = {
-        return MapViewController.storyboardInit()
+        return MapViewController()
     }()
 
     override func viewDidLoad() {
