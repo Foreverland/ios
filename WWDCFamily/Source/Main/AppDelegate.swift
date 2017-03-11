@@ -16,13 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.logOut), name: Session.unauthorizedNotificationName, object: nil)
 
         window = UIWindow(frame: UIScreen.main.bounds)
-
-        if Session.isLoggedIn {
-            window?.rootViewController = self.mapViewController()
-        } else {
-            window?.rootViewController = self.authViewController()
-        }
-
+        window?.rootViewController = RootNavigationController()
         window?.makeKeyAndVisible()
 
         return true

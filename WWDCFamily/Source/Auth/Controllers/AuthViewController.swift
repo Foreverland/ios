@@ -3,31 +3,34 @@ import Firebase
 import FirebaseAuthUI
 import FirebaseTwitterAuthUI
 
-protocol AuthViewControllerDelegate: class {
-    func authViewControllerDidLogIn(_ authViewController: AuthViewController)
-}
-
-class AuthViewController: UIViewController {
-    weak var delegate: AuthViewControllerDelegate?
-
+final class AuthViewController: UIViewController, RootChildViewController {
     fileprivate var authStateDidChangeHandle: FIRAuthStateDidChangeListenerHandle?
     fileprivate(set) var auth: FIRAuth? = FIRAuth.auth()
     fileprivate(set) var authUI: FUIAuth? = FUIAuth.defaultAuthUI()
 
-    init() {
-        super.init(nibName: nil, bundle: nil)
+    @IBOutlet private weak var headlineLabel: UILabel! {
+        didSet {
+            headlineLabel.text = "Auth.Title".localized
+        }
     }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    @IBOutlet private weak var authButton: UIButton! {
+        didSet {
+            authButton.setTitle("Auth.Login".localized.uppercased(), for: .normal)
+        }
     }
 
     override func loadView() {
         let view = UIView.instanceFromNib() as AuthView
         view.delegate = self
-
         self.view = view
     }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
+    }
+
+    // MARK: UIStatusBar
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -63,5 +66,14 @@ extension AuthViewController: AuthViewDelegate {
         let controller = self.authUI!.authViewController()
         controller.navigationBar.isHidden = false
         self.present(controller, animated: true, completion: nil)
+
+//        Session.sharedInstance.login { [weak self] (success) in
+//            guard success else {
+//                // Present failure modal
+//                return
+//            }
+//
+//            self?.rootNavigationController.routeToMap(animated: true)
+//        }
     }
 }
