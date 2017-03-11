@@ -34,6 +34,7 @@ final class RootNavigationController: UINavigationController {
     }
 
     func routeToAuth(animated: Bool) {
+        isNavigationBarHidden = true
         popToRootViewController(animated: animated)
     }
 

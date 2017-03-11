@@ -32,11 +32,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVQ-Ch-dcw">
                     <rect key="frame" x="0.0" y="684" width="414" height="36"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-<<<<<<< HEAD
-                    <state key="normal" title="Sign in">
-=======
                     <state key="normal" title="LOGIN">
->>>>>>> master
                         <color key="titleColor" red="1" green="1" blue="0.99999988080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
                     <connections>

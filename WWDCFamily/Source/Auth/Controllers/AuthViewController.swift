@@ -51,7 +51,14 @@ final class AuthViewController: UIViewController, RootChildViewController {
 
     func updateUI(auth: FIRAuth, user: FIRUser?) {
         if self.auth?.currentUser != nil {
-            self.delegate?.authViewControllerDidLogIn(self)
+            Session.sharedInstance.login { [weak self] (success) in
+                guard success else {
+                    // Present failure modal
+                    return
+                }
+
+                self?.rootNavigationController.routeToMap(animated: true)
+            }
         } else {
             print("Not signed in")
         }
@@ -66,14 +73,5 @@ extension AuthViewController: AuthViewDelegate {
         let controller = self.authUI!.authViewController()
         controller.navigationBar.isHidden = false
         self.present(controller, animated: true, completion: nil)
-
-//        Session.sharedInstance.login { [weak self] (success) in
-//            guard success else {
-//                // Present failure modal
-//                return
-//            }
-//
-//            self?.rootNavigationController.routeToMap(animated: true)
-//        }
     }
 }

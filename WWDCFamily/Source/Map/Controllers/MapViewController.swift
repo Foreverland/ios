@@ -1,5 +1,4 @@
 import UIKit
-import FirebaseAuthUI
 import MapKit
 
 final class MapViewController: UIViewController, RootChildViewController {
@@ -44,19 +43,18 @@ final class MapViewController: UIViewController, RootChildViewController {
         mapView.setRegion(datasource.zoomed(coordinate: currentLocation.coordinate), animated: true)
     }
 
-    // MARK: Alerts
-
     func signOut() {
-        do {
-            let authUI = FUIAuth.defaultAuthUI()
-            try authUI?.signOut()
-            NotificationCenter.default.post(name: Session.unauthorizedNotificationName, object: nil)
-        } catch let error {
-            // This error is most likely a network error, so retrying here makes more sense.
-            // TODO: Implement retrying.
-            fatalError("Could not sign out: \(error)")
+        Session.sharedInstance.logout { [weak self] (success) in
+            guard success else {
+                // Present failure modal
+                return
+            }
+
+            self?.rootNavigationController.routeToAuth(animated: true)
         }
     }
+
+    // MARK: Alerts
 
     private func presentLocationPermissionAlertIfNeeded() {
         guard !datasource.isAuthorized else { return }

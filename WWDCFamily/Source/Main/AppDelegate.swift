@@ -13,34 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
         Fabric.with([Twitter.self])
 
-        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.logOut), name: Session.unauthorizedNotificationName, object: nil)
-
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = RootNavigationController()
         window?.makeKeyAndVisible()
 
         return true
-    }
-
-    func logOut() {
-        window?.rootViewController = self.authViewController()
-        window?.makeKeyAndVisible()
-    }
-
-    func authViewController() -> UINavigationController {
-        let controller = AuthViewController()
-        controller.delegate = self
-        let navigationController = UINavigationController(rootViewController: controller)
-        navigationController.isNavigationBarHidden = true
-
-        return navigationController
-    }
-
-    func mapViewController() -> UINavigationController {
-        let controller = MapViewController()
-        let navigationController = UINavigationController(rootViewController: controller)
-
-        return navigationController
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
@@ -54,12 +31,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func handleOpenUrl(_ url: URL, sourceApplication: String?) -> Bool {
         return FUIAuth.defaultAuthUI()?.handleOpen(url, sourceApplication: sourceApplication) ?? false
-    }
-}
-
-extension AppDelegate: AuthViewControllerDelegate {
-    func authViewControllerDidLogIn(_ authViewController: AuthViewController) {
-        window?.rootViewController = self.mapViewController()
-        window?.makeKeyAndVisible()
     }
 }

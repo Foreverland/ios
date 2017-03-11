@@ -9,47 +9,47 @@
 /* Begin PBXBuildFile section */
 		1401B03B1E71CCB30007EA25 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401B03A1E71CCB30007EA25 /* Session.swift */; };
 		1401B0421E71D96E0007EA25 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401B0411E71D96E0007EA25 /* UIView+Extensions.swift */; };
-		142F65961E71F0B1006D350B /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F658C1E71F0B1006D350B /* AuthViewController.swift */; };
-		142F65991E71F0B1006D350B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F65911E71F0B1006D350B /* AppDelegate.swift */; };
-		142F659A1E71F0B1006D350B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F65941E71F0B1006D350B /* MapViewController.swift */; };
-		142F659C1E71F162006D350B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 142F659B1E71F162006D350B /* GoogleService-Info.plist */; };
 		14446F131E572A31000CA07C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14446F121E572A31000CA07C /* Assets.xcassets */; };
 		14446F161E572A31000CA07C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14446F141E572A31000CA07C /* LaunchScreen.storyboard */; };
-		B15FD94D147B156F90759430 /* Pods_WWDCFamily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3530D59C4D99526C528ADE05 /* Pods_WWDCFamily.framework */; };
-		148B72AD1E741DDA00CD87D5 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B72AC1E741DDA00CD87D5 /* AuthView.swift */; };
-		148B72AF1E741DE100CD87D5 /* AuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148B72AE1E741DE100CD87D5 /* AuthView.xib */; };
-		148B72B21E741FCA00CD87D5 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B72B11E741FCA00CD87D5 /* MapView.swift */; };
-		148B72B41E741FD300CD87D5 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148B72B31E741FD300CD87D5 /* MapView.xib */; };
-		14A372891E7423F60077DB6D /* MapDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A372881E7423F60077DB6D /* MapDataSource.swift */; };
-		14A3728B1E7424140077DB6D /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A3728A1E7424140077DB6D /* RootNavigationController.swift */; };
+		147D64831E74269F008F41B1 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D64741E74269F008F41B1 /* AuthViewController.swift */; };
+		147D64841E74269F008F41B1 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D64761E74269F008F41B1 /* AuthView.swift */; };
+		147D64851E74269F008F41B1 /* AuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147D64771E74269F008F41B1 /* AuthView.xib */; };
+		147D64861E74269F008F41B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D64791E74269F008F41B1 /* AppDelegate.swift */; };
+		147D64871E74269F008F41B1 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D647A1E74269F008F41B1 /* RootNavigationController.swift */; };
+		147D64881E74269F008F41B1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D647D1E74269F008F41B1 /* MapViewController.swift */; };
+		147D64891E74269F008F41B1 /* MapDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D647F1E74269F008F41B1 /* MapDataSource.swift */; };
+		147D648A1E74269F008F41B1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D64811E74269F008F41B1 /* MapView.swift */; };
+		147D648B1E74269F008F41B1 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147D64821E74269F008F41B1 /* MapView.xib */; };
+		14FA45A91E7427CC0034A806 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14FA45A81E7427CC0034A806 /* GoogleService-Info.plist */; };
 		3A3A5B5D1E73C7FE00599432 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3A5B5C1E73C7FE00599432 /* MapKit.framework */; };
 		3A3A5B5F1E73C85C00599432 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A3A5B5E1E73C85C00599432 /* Localizable.strings */; };
 		3A3A5B611E73C88B00599432 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A5B601E73C88B00599432 /* String+Extensions.swift */; };
+		E0AE892B2BD09BBD359899BC /* Pods_WWDCFamily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8833D8DE7CE007DC6F7CAEC1 /* Pods_WWDCFamily.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1401B03A1E71CCB30007EA25 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		1401B0411E71D96E0007EA25 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		142F658C1E71F0B1006D350B /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
-		142F65911E71F0B1006D350B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		142F65941E71F0B1006D350B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		142F659B1E71F162006D350B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		14446F081E572A31000CA07C /* WWDCFamily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCFamily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14446F121E572A31000CA07C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14446F151E572A31000CA07C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14446F171E572A31000CA07C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3530D59C4D99526C528ADE05 /* Pods_WWDCFamily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWDCFamily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B19F3C1DF1367A08F3799E8 /* Pods-WWDCFamily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWDCFamily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWDCFamily/Pods-WWDCFamily.debug.xcconfig"; sourceTree = "<group>"; };
-		D85D6E9273B68A84D0197674 /* Pods-WWDCFamily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWDCFamily.release.xcconfig"; path = "Pods/Target Support Files/Pods-WWDCFamily/Pods-WWDCFamily.release.xcconfig"; sourceTree = "<group>"; };
-		148B72AC1E741DDA00CD87D5 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
-		148B72AE1E741DE100CD87D5 /* AuthView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthView.xib; sourceTree = "<group>"; };
-		148B72B11E741FCA00CD87D5 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		148B72B31E741FD300CD87D5 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
-		14A372881E7423F60077DB6D /* MapDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDataSource.swift; sourceTree = "<group>"; };
-		14A3728A1E7424140077DB6D /* RootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		147D64741E74269F008F41B1 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		147D64761E74269F008F41B1 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		147D64771E74269F008F41B1 /* AuthView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthView.xib; sourceTree = "<group>"; };
+		147D64791E74269F008F41B1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		147D647A1E74269F008F41B1 /* RootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		147D647D1E74269F008F41B1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		147D647F1E74269F008F41B1 /* MapDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDataSource.swift; sourceTree = "<group>"; };
+		147D64811E74269F008F41B1 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		147D64821E74269F008F41B1 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		14FA45A81E7427CC0034A806 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A3A5B5C1E73C7FE00599432 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3A3A5B5E1E73C85C00599432 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		3A3A5B601E73C88B00599432 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		84469FA223D2C5C680D2B10F /* Pods-WWDCFamily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWDCFamily.release.xcconfig"; path = "Pods/Target Support Files/Pods-WWDCFamily/Pods-WWDCFamily.release.xcconfig"; sourceTree = "<group>"; };
+		8833D8DE7CE007DC6F7CAEC1 /* Pods_WWDCFamily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWDCFamily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7189173C9B2A5BF90DE117 /* Pods-WWDCFamily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWDCFamily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWDCFamily/Pods-WWDCFamily.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B15FD94D147B156F90759430 /* Pods_WWDCFamily.framework in Frameworks */,
 				3A3A5B5D1E73C7FE00599432 /* MapKit.framework in Frameworks */,
+				E0AE892B2BD09BBD359899BC /* Pods_WWDCFamily.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,67 +92,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		142F65891E71F0B1006D350B /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				142F65901E71F0B1006D350B /* Main */,
-				142F658A1E71F0B1006D350B /* Auth */,
-				142F65921E71F0B1006D350B /* Map */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		142F658A1E71F0B1006D350B /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				142F658B1E71F0B1006D350B /* Controllers */,
-				148B72AB1E741DD200CD87D5 /* Views */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
-		142F658B1E71F0B1006D350B /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				142F658C1E71F0B1006D350B /* AuthViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		142F65901E71F0B1006D350B /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				142F65911E71F0B1006D350B /* AppDelegate.swift */,
-				14A3728A1E7424140077DB6D /* RootNavigationController.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		142F65921E71F0B1006D350B /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				142F65931E71F0B1006D350B /* Controllers */,
-				148B72B01E741FBC00CD87D5 /* Views */,
-				14A372871E7423F60077DB6D /* Others */,
-			);
-			path = Map;
-			sourceTree = "<group>";
-		};
-		142F65931E71F0B1006D350B /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				142F65941E71F0B1006D350B /* MapViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		14446EFF1E572A30000CA07C = {
 			isa = PBXGroup;
 			children = (
 				14446F0A1E572A31000CA07C /* WWDCFamily */,
 				14446F091E572A31000CA07C /* Products */,
-				79913C7B256006FC71FBB8AD /* Pods */,
 				3A3A5B5B1E73C7FE00599432 /* Frameworks */,
+				8DEC1D5399DF194B80FE08AD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,53 +114,94 @@
 			isa = PBXGroup;
 			children = (
 				1401B0281E71CBDB0007EA25 /* Library */,
-				142F65891E71F0B1006D350B /* Source */,
+				147D64711E74269F008F41B1 /* Source */,
 				14446F121E572A31000CA07C /* Assets.xcassets */,
 				14446F141E572A31000CA07C /* LaunchScreen.storyboard */,
 				14446F171E572A31000CA07C /* Info.plist */,
-				142F659B1E71F162006D350B /* GoogleService-Info.plist */,
+				14FA45A81E7427CC0034A806 /* GoogleService-Info.plist */,
 				3A3A5B5E1E73C85C00599432 /* Localizable.strings */,
 			);
 			path = WWDCFamily;
 			sourceTree = "<group>";
 		};
-		79913C7B256006FC71FBB8AD /* Pods */ = {
+		147D64711E74269F008F41B1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				6B19F3C1DF1367A08F3799E8 /* Pods-WWDCFamily.debug.xcconfig */,
-				D85D6E9273B68A84D0197674 /* Pods-WWDCFamily.release.xcconfig */,
+				147D64781E74269F008F41B1 /* Main */,
+				147D64721E74269F008F41B1 /* Auth */,
+				147D647B1E74269F008F41B1 /* Map */,
 			);
-			name = Pods;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		95B9102D23705818AA3D949C /* Frameworks */ = {
+		147D64721E74269F008F41B1 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				3530D59C4D99526C528ADE05 /* Pods_WWDCFamily.framework */,
-		148B72AB1E741DD200CD87D5 /* Views */ = {
+				147D64731E74269F008F41B1 /* Controllers */,
+				147D64751E74269F008F41B1 /* Views */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		147D64731E74269F008F41B1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				148B72AC1E741DDA00CD87D5 /* AuthView.swift */,
-				148B72AE1E741DE100CD87D5 /* AuthView.xib */,
+				147D64741E74269F008F41B1 /* AuthViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		147D64751E74269F008F41B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				147D64761E74269F008F41B1 /* AuthView.swift */,
+				147D64771E74269F008F41B1 /* AuthView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		148B72B01E741FBC00CD87D5 /* Views */ = {
+		147D64781E74269F008F41B1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				148B72B11E741FCA00CD87D5 /* MapView.swift */,
-				148B72B31E741FD300CD87D5 /* MapView.xib */,
+				147D64791E74269F008F41B1 /* AppDelegate.swift */,
+				147D647A1E74269F008F41B1 /* RootNavigationController.swift */,
 			);
-			path = Views;
+			path = Main;
 			sourceTree = "<group>";
 		};
-		14A372871E7423F60077DB6D /* Others */ = {
+		147D647B1E74269F008F41B1 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				14A372881E7423F60077DB6D /* MapDataSource.swift */,
+				147D647C1E74269F008F41B1 /* Controllers */,
+				147D647E1E74269F008F41B1 /* Others */,
+				147D64801E74269F008F41B1 /* Views */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		147D647C1E74269F008F41B1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				147D647D1E74269F008F41B1 /* MapViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		147D647E1E74269F008F41B1 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				147D647F1E74269F008F41B1 /* MapDataSource.swift */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		147D64801E74269F008F41B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				147D64811E74269F008F41B1 /* MapView.swift */,
+				147D64821E74269F008F41B1 /* MapView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		3A3A5B581E73C72700599432 /* Utils */ = {
@@ -228,8 +215,18 @@
 			isa = PBXGroup;
 			children = (
 				3A3A5B5C1E73C7FE00599432 /* MapKit.framework */,
+				8833D8DE7CE007DC6F7CAEC1 /* Pods_WWDCFamily.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DEC1D5399DF194B80FE08AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE7189173C9B2A5BF90DE117 /* Pods-WWDCFamily.debug.xcconfig */,
+				84469FA223D2C5C680D2B10F /* Pods-WWDCFamily.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,12 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14446F1A1E572A31000CA07C /* Build configuration list for PBXNativeTarget "WWDCFamily" */;
 			buildPhases = (
-				132280E96463F30EC415639D /* [CP] Check Pods Manifest.lock */,
+				DF43FC4AECD4472DB5D3F3E1 /* [CP] Check Pods Manifest.lock */,
 				14446F041E572A30000CA07C /* Sources */,
 				14446F051E572A30000CA07C /* Frameworks */,
 				14446F061E572A30000CA07C /* Resources */,
-				E5FF913D13970D8AEB9E0F8D /* [CP] Embed Pods Frameworks */,
-				6D7BC884FD0A7E5DED708DB1 /* [CP] Copy Pods Resources */,
+				55A4D36067E25641D549547C /* [CP] Embed Pods Frameworks */,
+				2D9135B53C1405FBCB397970 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,32 +294,17 @@
 			files = (
 				3A3A5B5F1E73C85C00599432 /* Localizable.strings in Resources */,
 				14446F161E572A31000CA07C /* LaunchScreen.storyboard in Resources */,
-				142F659C1E71F162006D350B /* GoogleService-Info.plist in Resources */,
-				148B72AF1E741DE100CD87D5 /* AuthView.xib in Resources */,
+				147D64851E74269F008F41B1 /* AuthView.xib in Resources */,
 				14446F131E572A31000CA07C /* Assets.xcassets in Resources */,
-				148B72B41E741FD300CD87D5 /* MapView.xib in Resources */,
+				147D648B1E74269F008F41B1 /* MapView.xib in Resources */,
+				14FA45A91E7427CC0034A806 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		132280E96463F30EC415639D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6D7BC884FD0A7E5DED708DB1 /* [CP] Copy Pods Resources */ = {
+		2D9135B53C1405FBCB397970 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -337,7 +319,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWDCFamily/Pods-WWDCFamily-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E5FF913D13970D8AEB9E0F8D /* [CP] Embed Pods Frameworks */ = {
+		55A4D36067E25641D549547C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,6 +334,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWDCFamily/Pods-WWDCFamily-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DF43FC4AECD4472DB5D3F3E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -359,16 +356,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				147D64861E74269F008F41B1 /* AppDelegate.swift in Sources */,
+				147D64891E74269F008F41B1 /* MapDataSource.swift in Sources */,
+				147D64831E74269F008F41B1 /* AuthViewController.swift in Sources */,
+				147D64841E74269F008F41B1 /* AuthView.swift in Sources */,
 				1401B0421E71D96E0007EA25 /* UIView+Extensions.swift in Sources */,
-				142F659A1E71F0B1006D350B /* MapViewController.swift in Sources */,
-				142F65961E71F0B1006D350B /* AuthViewController.swift in Sources */,
-				14A3728B1E7424140077DB6D /* RootNavigationController.swift in Sources */,
-				14A372891E7423F60077DB6D /* MapDataSource.swift in Sources */,
 				3A3A5B611E73C88B00599432 /* String+Extensions.swift in Sources */,
-				142F65991E71F0B1006D350B /* AppDelegate.swift in Sources */,
-				148B72B21E741FCA00CD87D5 /* MapView.swift in Sources */,
+				147D64871E74269F008F41B1 /* RootNavigationController.swift in Sources */,
+				147D648A1E74269F008F41B1 /* MapView.swift in Sources */,
 				1401B03B1E71CCB30007EA25 /* Session.swift in Sources */,
-				148B72AD1E741DDA00CD87D5 /* AuthView.swift in Sources */,
+				147D64881E74269F008F41B1 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -469,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -479,7 +476,7 @@
 		};
 		14446F1B1E572A31000CA07C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B19F3C1DF1367A08F3799E8 /* Pods-WWDCFamily.debug.xcconfig */;
+			baseConfigurationReference = DE7189173C9B2A5BF90DE117 /* Pods-WWDCFamily.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 29X3GG489T;
@@ -494,7 +491,7 @@
 		};
 		14446F1C1E572A31000CA07C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D85D6E9273B68A84D0197674 /* Pods-WWDCFamily.release.xcconfig */;
+			baseConfigurationReference = 84469FA223D2C5C680D2B10F /* Pods-WWDCFamily.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 29X3GG489T;
