@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  WWDCFamily
+
+  Created by Adrian Domanico on 3/10/17.
+  Copyright © 2017 WWDC Family. All rights reserved.
+*/
+
+"MapVC.Title" = "WWDC.Family";
+
+"Auth.Title" = "WWDC Family";
+"Auth.Login" = "Login";
+
+"LocationDisabledAlert.Title" = "Location Services Disabled";
+"LocationDisabledAlert.Body" = "Please enable location services in 'Settings' so WWDC.Family can help you find developers!";
+
+"General.OK" = "OK";
