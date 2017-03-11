@@ -10,26 +10,38 @@
 		1401B03B1E71CCB30007EA25 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401B03A1E71CCB30007EA25 /* Session.swift */; };
 		1401B0421E71D96E0007EA25 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401B0411E71D96E0007EA25 /* UIView+Extensions.swift */; };
 		142F65961E71F0B1006D350B /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F658C1E71F0B1006D350B /* AuthViewController.swift */; };
-		142F65971E71F0B1006D350B /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F658E1E71F0B1006D350B /* AuthView.swift */; };
-		142F65981E71F0B1006D350B /* AuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142F658F1E71F0B1006D350B /* AuthView.xib */; };
 		142F65991E71F0B1006D350B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F65911E71F0B1006D350B /* AppDelegate.swift */; };
 		142F659A1E71F0B1006D350B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F65941E71F0B1006D350B /* MapViewController.swift */; };
 		14446F131E572A31000CA07C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14446F121E572A31000CA07C /* Assets.xcassets */; };
 		14446F161E572A31000CA07C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14446F141E572A31000CA07C /* LaunchScreen.storyboard */; };
+		3A3A5B481E73AC5300599432 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A5B471E73AC5300599432 /* RootNavigationController.swift */; };
+		3A3A5B4A1E73AC5E00599432 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3A5B491E73AC5E00599432 /* Root.storyboard */; };
+		3A3A5B4F1E73BE1E00599432 /* StoryboardInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A5B4E1E73BE1E00599432 /* StoryboardInstance.swift */; };
+		3A3A5B521E73BF8B00599432 /* Core.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3A5B511E73BF8B00599432 /* Core.storyboard */; };
+		3A3A5B5D1E73C7FE00599432 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3A5B5C1E73C7FE00599432 /* MapKit.framework */; };
+		3A3A5B5F1E73C85C00599432 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A3A5B5E1E73C85C00599432 /* Localizable.strings */; };
+		3A3A5B611E73C88B00599432 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A5B601E73C88B00599432 /* String+Extensions.swift */; };
+		3A3A5B641E73CA0D00599432 /* MapDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A5B631E73CA0D00599432 /* MapDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1401B03A1E71CCB30007EA25 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		1401B0411E71D96E0007EA25 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		142F658C1E71F0B1006D350B /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
-		142F658E1E71F0B1006D350B /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
-		142F658F1E71F0B1006D350B /* AuthView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthView.xib; sourceTree = "<group>"; };
 		142F65911E71F0B1006D350B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		142F65941E71F0B1006D350B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		14446F081E572A31000CA07C /* WWDCFamily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCFamily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14446F121E572A31000CA07C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14446F151E572A31000CA07C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14446F171E572A31000CA07C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3A5B471E73AC5300599432 /* RootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		3A3A5B491E73AC5E00599432 /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
+		3A3A5B4E1E73BE1E00599432 /* StoryboardInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardInstance.swift; path = Extensions/StoryboardInstance.swift; sourceTree = "<group>"; };
+		3A3A5B511E73BF8B00599432 /* Core.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Core.storyboard; sourceTree = "<group>"; };
+		3A3A5B5C1E73C7FE00599432 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3A3A5B5E1E73C85C00599432 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		3A3A5B601E73C88B00599432 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		3A3A5B631E73CA0D00599432 /* MapDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3A5B5D1E73C7FE00599432 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +59,8 @@
 		1401B0281E71CBDB0007EA25 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				3A3A5B581E73C72700599432 /* Utils */,
+				3A3A5B4D1E73BDB800599432 /* Protocols */,
 				1401B0401E71D96E0007EA25 /* Extensions */,
 				1401B0391E71CCAE0007EA25 /* Models */,
 			);
@@ -64,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				1401B0411E71D96E0007EA25 /* UIView+Extensions.swift */,
+				3A3A5B601E73C88B00599432 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -71,6 +87,8 @@
 		142F65891E71F0B1006D350B /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3A3A5B501E73BF7F00599432 /* Core */,
+				3A3A5B461E73AC2E00599432 /* Navigation */,
 				142F65901E71F0B1006D350B /* Main */,
 				142F658A1E71F0B1006D350B /* Auth */,
 				142F65921E71F0B1006D350B /* Map */,
@@ -98,8 +116,6 @@
 		142F658D1E71F0B1006D350B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				142F658E1E71F0B1006D350B /* AuthView.swift */,
-				142F658F1E71F0B1006D350B /* AuthView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,6 +131,7 @@
 		142F65921E71F0B1006D350B /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				3A3A5B621E73C9FC00599432 /* Datasource */,
 				142F65931E71F0B1006D350B /* Controllers */,
 				142F65951E71F0B1006D350B /* Views */,
 			);
@@ -141,6 +158,7 @@
 			children = (
 				14446F0A1E572A31000CA07C /* WWDCFamily */,
 				14446F091E572A31000CA07C /* Products */,
+				3A3A5B5B1E73C7FE00599432 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,8 +178,57 @@
 				14446F121E572A31000CA07C /* Assets.xcassets */,
 				14446F141E572A31000CA07C /* LaunchScreen.storyboard */,
 				14446F171E572A31000CA07C /* Info.plist */,
+				3A3A5B5E1E73C85C00599432 /* Localizable.strings */,
 			);
 			path = WWDCFamily;
+			sourceTree = "<group>";
+		};
+		3A3A5B461E73AC2E00599432 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				3A3A5B471E73AC5300599432 /* RootNavigationController.swift */,
+				3A3A5B491E73AC5E00599432 /* Root.storyboard */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		3A3A5B4D1E73BDB800599432 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3A3A5B4E1E73BE1E00599432 /* StoryboardInstance.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		3A3A5B501E73BF7F00599432 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3A3A5B511E73BF8B00599432 /* Core.storyboard */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		3A3A5B581E73C72700599432 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		3A3A5B5B1E73C7FE00599432 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A3A5B5C1E73C7FE00599432 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A3A5B621E73C9FC00599432 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				3A3A5B631E73CA0D00599432 /* MapDataSource.swift */,
+			);
+			name = Datasource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,9 +290,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3A5B5F1E73C85C00599432 /* Localizable.strings in Resources */,
+				3A3A5B521E73BF8B00599432 /* Core.storyboard in Resources */,
 				14446F161E572A31000CA07C /* LaunchScreen.storyboard in Resources */,
 				14446F131E572A31000CA07C /* Assets.xcassets in Resources */,
-				142F65981E71F0B1006D350B /* AuthView.xib in Resources */,
+				3A3A5B4A1E73AC5E00599432 /* Root.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,10 +306,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1401B0421E71D96E0007EA25 /* UIView+Extensions.swift in Sources */,
+				3A3A5B4F1E73BE1E00599432 /* StoryboardInstance.swift in Sources */,
 				142F659A1E71F0B1006D350B /* MapViewController.swift in Sources */,
+				3A3A5B641E73CA0D00599432 /* MapDataSource.swift in Sources */,
 				142F65961E71F0B1006D350B /* AuthViewController.swift in Sources */,
-				142F65971E71F0B1006D350B /* AuthView.swift in Sources */,
+				3A3A5B611E73C88B00599432 /* String+Extensions.swift in Sources */,
 				142F65991E71F0B1006D350B /* AppDelegate.swift in Sources */,
+				3A3A5B481E73AC5300599432 /* RootNavigationController.swift in Sources */,
 				1401B03B1E71CCB30007EA25 /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

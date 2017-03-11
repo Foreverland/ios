@@ -1,34 +1,41 @@
 import UIKit
 
-protocol AuthViewControllerDelegate: class {
-    func authViewController(_ authViewControllerDidLogIn: AuthViewController)
-}
+final class AuthViewController: UIViewController, StoryboardInstance, RootChildViewController {
 
-class AuthViewController: UIViewController {
-    weak var delegate: AuthViewControllerDelegate?
+    static var storyboardName: String = "Core"
 
-    init() {
-        super.init(nibName: nil, bundle: nil)
+    @IBOutlet private weak var headlineLabel: UILabel! {
+        didSet {
+            headlineLabel.text = "Auth.Title".localized
+        }
+    }
+    @IBOutlet private weak var authButton: UIButton! {
+        didSet {
+            authButton.setTitle("Auth.Login".localized.uppercased(), for: .normal)
+        }
     }
 
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
     }
 
-    override func loadView() {
-        let view = UIView.instanceFromNib() as AuthView
-        view.delegate = self
+    // MARK: UI Events
 
-        self.view = view
+    @IBAction private func didTapLoginButton() {
+        Session.sharedInstance.login { [weak self] (success) in
+            guard success else {
+                // Present failure modal
+                return
+            }
+
+            self?.rootNavigationController.routeToMap(animated: true)
+        }
     }
+
+    // MARK: UIStatusBar
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
-    }
-}
-
-extension AuthViewController: AuthViewDelegate {
-    func authView(_ authViewDidPressLogIn: AuthView) {
-        self.delegate?.authViewController(self)
     }
 }

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="we5-fq-U0a">
+            <objects>
+                <viewController storyboardIdentifier="AuthViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8FB-ax-2bx" customClass="AuthViewController" customModule="WWDCFamily" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jJh-bx-8YX"/>
+                        <viewControllerLayoutGuide type="bottom" id="vXK-Km-YMr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PI9-er-a5M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FRh-ar-WHm">
+                                <rect key="frame" x="16" y="251" width="343" height="165.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people" translatesAutoresizingMaskIntoConstraints="NO" id="kn4-Ep-66Q">
+                                        <rect key="frame" x="92" y="0.0" width="159" height="99"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WWDC Family" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MM-0b-Tjo">
+                                        <rect key="frame" x="36" y="115" width="271" height="50.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="42"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIj-qw-9aU">
+                                <rect key="frame" x="0.0" y="615" width="375" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" red="1" green="1" blue="0.99999988080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLoginButton" destination="8FB-ax-2bx" eventType="touchUpInside" id="eHa-DF-c7i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42550107836723328" green="0.042427778244018555" blue="0.9304165244102478" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FRh-ar-WHm" secondAttribute="trailing" constant="16" id="3pP-sv-ey0"/>
+                            <constraint firstItem="hIj-qw-9aU" firstAttribute="leading" secondItem="PI9-er-a5M" secondAttribute="leading" id="Lzs-fh-hcc"/>
+                            <constraint firstItem="vXK-Km-YMr" firstAttribute="top" secondItem="hIj-qw-9aU" secondAttribute="bottom" constant="16" id="O39-dl-c7f"/>
+                            <constraint firstItem="FRh-ar-WHm" firstAttribute="leading" secondItem="PI9-er-a5M" secondAttribute="leading" constant="16" id="pGD-px-gkE"/>
+                            <constraint firstItem="FRh-ar-WHm" firstAttribute="centerY" secondItem="PI9-er-a5M" secondAttribute="centerY" id="rkl-X6-Afz"/>
+                            <constraint firstAttribute="trailing" secondItem="hIj-qw-9aU" secondAttribute="trailing" id="yNc-0l-hcc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authButton" destination="hIj-qw-9aU" id="Zsz-LG-zbW"/>
+                        <outlet property="headlineLabel" destination="0MM-0b-Tjo" id="CSk-ZJ-VU1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v3G-9q-v4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543.20000000000005" y="-44.527736131934034"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="W3h-iZ-Wlt">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VEl-7f-b7l" customClass="MapViewController" customModule="WWDCFamily" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tbd-s3-gXk"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ht-gf-3ub"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nES-wn-d2u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VOG-qH-ETd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VOG-qH-ETd" firstAttribute="leading" secondItem="nES-wn-d2u" secondAttribute="leading" id="JXq-py-rhp"/>
+                            <constraint firstItem="VOG-qH-ETd" firstAttribute="top" secondItem="Tbd-s3-gXk" secondAttribute="bottom" id="ioo-Bj-yAO"/>
+                            <constraint firstItem="5Ht-gf-3ub" firstAttribute="top" secondItem="VOG-qH-ETd" secondAttribute="bottom" id="jbj-6v-nET"/>
+                            <constraint firstAttribute="trailing" secondItem="VOG-qH-ETd" secondAttribute="trailing" id="nvR-mi-DQz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="VOG-qH-ETd" id="LNL-IB-Ubh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IKi-AW-ncC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.59999999999999" y="-45.42728635682159"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="people" width="159" height="99"/>
+    </resources>
+</document>
