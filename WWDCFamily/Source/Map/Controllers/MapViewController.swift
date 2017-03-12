@@ -3,27 +3,25 @@ import MapKit
 
 final class MapViewController: UIViewController, RootChildViewController {
 
-    private let datasource = MapDataSource()
+    fileprivate let datasource = MapDataSource()
 
-    override func loadView() {
-        let view = UIView.instanceFromNib() as MapView
-        self.view = view
-    }
-
-    var mapView: MKMapView {
-        return (self.view as! MapView).mapView
+    @IBOutlet private(set) weak var mapView: MKMapView! {
+        didSet {
+            mapView.setRegion(datasource.sfRegion, animated: true)
+        }
     }
 
     // MARK: VC
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         navigationItem.hidesBackButton = true
         title = "MapVC.Title".localized
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "locIcon"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(MapViewController.didTapCurrentLocationBarButton))
 
-        mapView.setRegion(datasource.sfRegion, animated: true)
-        mapView.showsUserLocation = true
+        datasource.observer = self
+        datasource.refresh()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -51,6 +49,12 @@ final class MapViewController: UIViewController, RootChildViewController {
         present(alert, animated: true, completion: nil)
     }
 
+}
+
+extension MapViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        return datasource.annotationView(annotation: annotation)
+    }
 }
 
 extension MapViewController: MapDataObserver {

@@ -2,22 +2,44 @@ import Foundation
 import MapKit
 
 protocol MapDataObserver: class {
+
+    weak var mapView: MKMapView! { get }
+
     func didChange(location: CLLocation)
 }
 
 final class MapDataSource: NSObject {
 
     fileprivate let locationManager: CLLocationManager = CLLocationManager()
-
     fileprivate(set) var currentLocation: CLLocation?
 
     weak var observer: MapDataObserver?
+
+    private(set) var users: [User] = [] {
+        didSet {
+            reloadAnnotations()
+        }
+    }
 
     override init() {
         super.init()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         locationManager.distanceFilter = kCLDistanceFilterNone
+
+        NotificationCenter.default.addObserver(self, selector: #selector(MapDataSource.notificationAppResignActive), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(MapDataSource.notificationAppBecomingActive), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+    }
+
+    // MARK: Data
+
+    func refresh() {
+        API.getNearbyUsers { [weak self] (success, users) in
+            guard success else {
+                return
+            }
+            self?.users = users
+        }
     }
 
     // MARK: Map Regions
@@ -35,6 +57,24 @@ final class MapDataSource: NSObject {
         return MKCoordinateRegionMake(coordinate, span)
     }
 
+    // MARK: Annotations
+
+    private func reloadAnnotations() {
+        observer?.mapView.addAnnotations(users)
+    }
+
+
+    func annotationView(annotation: MKAnnotation) -> MKAnnotationView? {
+        if let user = annotation as? User {
+            guard let existingAnnotationView = observer?.mapView.dequeueReusableAnnotationView(withIdentifier: UserAnnotationView.identifier) else {
+                return UserAnnotationView(annotation: user, reuseIdentifier: UserAnnotationView.identifier)
+            }
+            return existingAnnotationView
+        }
+
+        return nil
+    }
+
     // MARK: Permissions & State
 
     var isAuthorized: Bool {
@@ -46,7 +86,19 @@ final class MapDataSource: NSObject {
         locationManager.requestWhenInUseAuthorization()
     }
 
+    // MARK: Notifications
+
+    func notificationAppResignActive() {
+        guard isAuthorized else { return }
+        locationManager.stopUpdatingLocation()
+    }
+
+    func notificationAppBecomingActive() {
+        guard isAuthorized else { return }
+        locationManager.startUpdatingLocation()
+    }
 }
+
 
 extension MapDataSource: CLLocationManagerDelegate {
 
