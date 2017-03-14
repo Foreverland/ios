@@ -24,6 +24,9 @@ final class MapViewController: UIViewController, RootChildViewController {
 
         mapView.setRegion(datasource.sfRegion, animated: true)
         mapView.showsUserLocation = true
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign out", style: .done, target: self, action: #selector(signOut))
+        view.backgroundColor = .white
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -38,6 +41,17 @@ final class MapViewController: UIViewController, RootChildViewController {
         presentLocationPermissionAlertIfNeeded()
         guard let currentLocation = datasource.currentLocation else { return }
         mapView.setRegion(datasource.zoomed(coordinate: currentLocation.coordinate), animated: true)
+    }
+
+    func signOut() {
+        Session.sharedInstance.logout { [weak self] (success) in
+            guard success else {
+                // Present failure modal
+                return
+            }
+
+            self?.rootNavigationController.routeToAuth(animated: true)
+        }
     }
 
     // MARK: Alerts

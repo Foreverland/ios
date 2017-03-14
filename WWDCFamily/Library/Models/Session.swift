@@ -1,4 +1,6 @@
 import Foundation
+import Firebase
+import FirebaseAuthUI
 
 class Session {
 
@@ -17,7 +19,9 @@ class Session {
     // MARK: Auth Properties
 
     var isLoggedIn: Bool {
-        return sessionToken != nil
+        let auth = FIRAuth.auth()
+
+        return auth?.currentUser != nil
     }
 
     private(set) var sessionToken: String? {
@@ -55,6 +59,14 @@ class Session {
 
     // Removes local auth properies after a successful log out
     private func removeAuthProperties() {
+        do {
+            let authUI = FUIAuth.defaultAuthUI()
+            try authUI?.signOut()
+        } catch let error {
+            // This error is most likely a network error, so retrying here makes more sense.
+            // TODO: Implement retrying.
+            fatalError("Could not sign out: \(error)")
+        }
         sessionToken = nil
     }
 }

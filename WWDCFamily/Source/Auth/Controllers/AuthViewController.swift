@@ -1,6 +1,12 @@
 import UIKit
+import Firebase
+import FirebaseAuthUI
+import FirebaseTwitterAuthUI
 
 final class AuthViewController: UIViewController, RootChildViewController {
+    fileprivate var authStateDidChangeHandle: FIRAuthStateDidChangeListenerHandle?
+    fileprivate(set) var auth: FIRAuth? = FIRAuth.auth()
+    fileprivate(set) var authUI: FUIAuth? = FUIAuth.defaultAuthUI()
 
     @IBOutlet private weak var headlineLabel: UILabel! {
         didSet {
@@ -29,17 +35,43 @@ final class AuthViewController: UIViewController, RootChildViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        self.authStateDidChangeHandle = self.auth?.addStateDidChangeListener(self.updateUI(auth:user:))
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if let handle = self.authStateDidChangeHandle {
+            self.auth?.removeStateDidChangeListener(handle)
+        }
+    }
+
+    func updateUI(auth: FIRAuth, user: FIRUser?) {
+        if self.auth?.currentUser != nil {
+            Session.sharedInstance.login { [weak self] (success) in
+                guard success else {
+                    // Present failure modal
+                    return
+                }
+
+                self?.rootNavigationController.routeToMap(animated: true)
+            }
+        } else {
+            print("Not signed in")
+        }
+    }
 }
 
 extension AuthViewController: AuthViewDelegate {
     func authView(_ authViewDidPressLogIn: AuthView) {
-        Session.sharedInstance.login { [weak self] (success) in
-            guard success else {
-                // Present failure modal
-                return
-            }
+        self.authUI?.providers = [FUITwitterAuth()]
+        self.authUI?.isSignInWithEmailHidden = true
 
-            self?.rootNavigationController.routeToMap(animated: true)
-        }
+        let controller = self.authUI!.authViewController()
+        controller.navigationBar.isHidden = false
+        self.present(controller, animated: true, completion: nil)
     }
 }
