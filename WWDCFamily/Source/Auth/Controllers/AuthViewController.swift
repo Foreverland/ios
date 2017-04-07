@@ -3,7 +3,7 @@ import Firebase
 import FirebaseAuthUI
 import FirebaseTwitterAuthUI
 
-final class AuthViewController: UIViewController, RootChildViewController {
+final class AuthViewController: UIViewController, Routable {
     fileprivate var authStateDidChangeHandle: FIRAuthStateDidChangeListenerHandle?
     fileprivate(set) var auth: FIRAuth? = FIRAuth.auth()
     fileprivate(set) var authUI: FUIAuth? = FUIAuth.defaultAuthUI()

@@ -1,7 +1,7 @@
 import UIKit
 import MapKit
 
-final class MapViewController: UIViewController, RootChildViewController {
+final class MapViewController: UIViewController, Routable {
 
     private let datasource = MapDataSource()
 

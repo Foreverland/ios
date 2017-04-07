@@ -1,10 +1,10 @@
 import UIKit
 
-protocol RootChildViewController: class {
+protocol Routable: class {
 
 }
 
-extension Router where Self : UIViewController {
+extension Routable where Self : UIViewController {
     var router: Router! {
         return navigationController as! Router
     }
