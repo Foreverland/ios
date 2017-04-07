@@ -1,8 +1,6 @@
 import UIKit
 
-protocol Routable: class {
-
-}
+protocol Routable: class {}
 
 extension Routable where Self : UIViewController {
     var router: Router! {
@@ -11,26 +9,22 @@ extension Routable where Self : UIViewController {
 }
 
 final class Router: UINavigationController {
-
-    // MARK: Child VCs
-
-    private lazy var authVC: AuthViewController = {
+    private lazy var authViewController: AuthViewController = {
         return AuthViewController()
     }()
 
-    private lazy var mapVC: MapViewController = {
+    private lazy var mapViewController: MapViewController = {
         return MapViewController()
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         initialRouting()
     }
 
-    // MARK: Routing
-
     func routeToMap(animated: Bool) {
-        setViewControllers([authVC, mapVC], animated: animated)
+        setViewControllers([authViewController, mapViewController], animated: animated)
     }
 
     func routeToAuth(animated: Bool) {
@@ -39,14 +33,14 @@ final class Router: UINavigationController {
     }
 
     private func initialRouting() {
-        setViewControllers([authVC, mapVC], animated: false)
+        setViewControllers([authViewController, mapViewController], animated: false)
 
         guard Session.sharedInstance.isLoggedIn else {
             routeToAuth(animated: false)
+
             return
         }
 
         routeToMap(animated: false)
     }
-
 }
