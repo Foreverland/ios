@@ -15,11 +15,11 @@
 		147D64841E74269F008F41B1 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D64761E74269F008F41B1 /* AuthView.swift */; };
 		147D64851E74269F008F41B1 /* AuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147D64771E74269F008F41B1 /* AuthView.xib */; };
 		147D64861E74269F008F41B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D64791E74269F008F41B1 /* AppDelegate.swift */; };
-		147D64871E74269F008F41B1 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D647A1E74269F008F41B1 /* RootNavigationController.swift */; };
 		147D64881E74269F008F41B1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D647D1E74269F008F41B1 /* MapViewController.swift */; };
 		147D64891E74269F008F41B1 /* MapDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D647F1E74269F008F41B1 /* MapDataSource.swift */; };
 		147D648A1E74269F008F41B1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D64811E74269F008F41B1 /* MapView.swift */; };
 		147D648B1E74269F008F41B1 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147D64821E74269F008F41B1 /* MapView.xib */; };
+		14A4BCAE1E97D0D50065B07A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A4BCAD1E97D0D50065B07A /* Router.swift */; };
 		14FA45A91E7427CC0034A806 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14FA45A81E7427CC0034A806 /* GoogleService-Info.plist */; };
 		3A3A5B5D1E73C7FE00599432 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3A5B5C1E73C7FE00599432 /* MapKit.framework */; };
 		3A3A5B5F1E73C85C00599432 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A3A5B5E1E73C85C00599432 /* Localizable.strings */; };
@@ -38,11 +38,11 @@
 		147D64761E74269F008F41B1 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		147D64771E74269F008F41B1 /* AuthView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthView.xib; sourceTree = "<group>"; };
 		147D64791E74269F008F41B1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		147D647A1E74269F008F41B1 /* RootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		147D647D1E74269F008F41B1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		147D647F1E74269F008F41B1 /* MapDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDataSource.swift; sourceTree = "<group>"; };
 		147D64811E74269F008F41B1 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		147D64821E74269F008F41B1 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		14A4BCAD1E97D0D50065B07A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		14FA45A81E7427CC0034A806 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A3A5B5C1E73C7FE00599432 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3A3A5B5E1E73C85C00599432 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				147D64791E74269F008F41B1 /* AppDelegate.swift */,
-				147D647A1E74269F008F41B1 /* RootNavigationController.swift */,
+				14A4BCAD1E97D0D50065B07A /* Router.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -358,11 +358,11 @@
 			files = (
 				147D64861E74269F008F41B1 /* AppDelegate.swift in Sources */,
 				147D64891E74269F008F41B1 /* MapDataSource.swift in Sources */,
+				14A4BCAE1E97D0D50065B07A /* Router.swift in Sources */,
 				147D64831E74269F008F41B1 /* AuthViewController.swift in Sources */,
 				147D64841E74269F008F41B1 /* AuthView.swift in Sources */,
 				1401B0421E71D96E0007EA25 /* UIView+Extensions.swift in Sources */,
 				3A3A5B611E73C88B00599432 /* String+Extensions.swift in Sources */,
-				147D64871E74269F008F41B1 /* RootNavigationController.swift in Sources */,
 				147D648A1E74269F008F41B1 /* MapView.swift in Sources */,
 				1401B03B1E71CCB30007EA25 /* Session.swift in Sources */,
 				147D64881E74269F008F41B1 /* MapViewController.swift in Sources */,

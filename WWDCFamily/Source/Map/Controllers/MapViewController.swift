@@ -50,7 +50,7 @@ final class MapViewController: UIViewController, RootChildViewController {
                 return
             }
 
-            self?.rootNavigationController.routeToAuth(animated: true)
+            self?.router.routeToAuth(animated: true)
         }
     }
 

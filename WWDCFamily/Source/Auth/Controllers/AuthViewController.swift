@@ -57,7 +57,7 @@ final class AuthViewController: UIViewController, RootChildViewController {
                     return
                 }
 
-                self?.rootNavigationController.routeToMap(animated: true)
+                self?.router.routeToMap(animated: true)
             }
         } else {
             print("Not signed in")

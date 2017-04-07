@@ -31,12 +31,5 @@ DerivedData
 *.gcno
 *.gcda
 
-# CocoaPods
-Pods
-
 # Carthage
 Checkouts
-
-# Sensitive files
-WWDCFamily/GoogleService-Info.plist
-WWDCFamily/Info.plist

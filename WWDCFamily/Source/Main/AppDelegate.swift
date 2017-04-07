@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Fabric.with([Twitter.self])
 
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = RootNavigationController()
+        window?.rootViewController = Router()
         window?.makeKeyAndVisible()
 
         return true
