@@ -8,17 +8,6 @@ final class AuthViewController: UIViewController, Routable {
     fileprivate(set) var auth: FIRAuth? = FIRAuth.auth()
     fileprivate(set) var authUI: FUIAuth? = FUIAuth.defaultAuthUI()
 
-    @IBOutlet private weak var headlineLabel: UILabel! {
-        didSet {
-            headlineLabel.text = "Auth.Title".localized
-        }
-    }
-    @IBOutlet private weak var authButton: UIButton! {
-        didSet {
-            authButton.setTitle("Auth.Login".localized.uppercased(), for: .normal)
-        }
-    }
-
     override func loadView() {
         let view = UIView.instanceFromNib() as AuthView
         view.delegate = self
